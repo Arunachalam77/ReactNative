@@ -5,7 +5,6 @@ import {StyleSheet} from 'react-native';
 
 export const inputStyles = StyleSheet.create({
   input: {
-    // margin: 10,
     borderWidth: 1,
     height: 62,
     paddingHorizontal: 16,
