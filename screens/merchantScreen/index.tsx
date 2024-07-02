@@ -110,6 +110,7 @@ const MerchantScreen = () => {
       Math.max(prevAmount - calculateAmount, 0),
     );
   };
+
   const getIntialData = (initialSelect: string) => {
     if (initialSelect === 'All') {
       setProductFilter(productsListed);
@@ -128,6 +129,8 @@ const MerchantScreen = () => {
   return (
     <View style={merchantStyles.overAllScreenSx}>
       <TopStatusBar headTitle="Merchant Detail" />
+
+      {/*first section*/}
       <View
         style={{
           backgroundColor: '#ffffff',
@@ -187,6 +190,8 @@ const MerchantScreen = () => {
         </View>
       </View>
 
+      {/*second section*/}
+
       <View
         style={{
           ...merchantStyles.secondContentSx,
@@ -203,7 +208,7 @@ const MerchantScreen = () => {
             showsHorizontalScrollIndicator={true}
             renderItem={({item}: any) => (
               <Card
-                overAllscreen={{paddingBottom: 12, paddingHorizontal: 8}}
+                overAllscreen={{paddingBottom: 20, paddingHorizontal: 8}}
                 ImageSx={{width: 67, height: 62, borderRadius: 8}}
                 source={item?.image}
                 quantity
@@ -223,6 +228,8 @@ const MerchantScreen = () => {
           <Text style={{...merchantStyles.nodataSx}}>No dish Found !!!</Text>
         )}
       </View>
+
+      {/*Third section*/}
 
       <TouchableOpacity
         style={merchantStyles.bottom}
