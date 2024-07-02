@@ -1,12 +1,14 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
-import NavigateScreen from './utils/router';
+// import RegisterScreen from './screens/register';
+import MerchantScreen from './screens/merchantScreen';
 
 
 function App(): React.JSX.Element {
   return (
     <>
-    <NavigateScreen/>
+    {/* <RegisterScreen/> */}
+    <MerchantScreen/>
     </>
   );
 }

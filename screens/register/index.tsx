@@ -14,8 +14,6 @@ import {
 import {registerStyles} from './style';
 import InputField from '../../packages/atoms/inputField';
 import MobileInput from '../../packages/atoms/mobileInput';
-import TopStatusBar from '../../packages/atoms/TopStatusBar';
-import { useNavigation } from '@react-navigation/native';
 
 const countryCodes = [
   {code: '+91', image: require('../../assets/indiaFlag.png')},
@@ -24,7 +22,6 @@ const countryCodes = [
 ];
 const RegisterScreen = () => {
 
-  const navigation = useNavigation();
 
   const [Profile, setProfile] = useState({
     name: '',
@@ -109,7 +106,6 @@ const RegisterScreen = () => {
 
   return (
     <View style={registerStyles.overAllScreenSx}>
-      <TopStatusBar headTitle="Register" onBack={()=>navigation.goBack()} />
       {!sucess ? (
         <>
           <View style={registerStyles.containerOne}>

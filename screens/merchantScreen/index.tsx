@@ -23,10 +23,9 @@ import {
   SelectCarosle,
   productsListed,
 } from '../../utils/contants';
-import {useNavigation} from '@react-navigation/native';
 import TopStatusBar from '../../packages/atoms/TopStatusBar';
 
-const MerChantScreen = () => {
+const MerchantScreen = () => {
   const [productFilter, setProductFilter] = useState(productsListed);
   const [quantity, setQuantity] = useState<any>({});
   const [overAllCount, setOverallCount] = useState(0);
@@ -36,7 +35,6 @@ const MerChantScreen = () => {
     title: SelectCarosle[1]?.title,
     icon: SelectCarosle[1]?.icon,
   });
-  const navigation = useNavigation();
 
   const CheckItem = (val: any) => {
     const data = val?.data;
@@ -129,10 +127,7 @@ const MerChantScreen = () => {
 
   return (
     <View style={merchantStyles.overAllScreenSx}>
-      <TopStatusBar
-        headTitle="Merchant Detail"
-        onBack={() => navigation.goBack()}
-      />
+      <TopStatusBar headTitle="Merchant Detail" />
       <View
         style={{
           backgroundColor: '#ffffff',
@@ -150,7 +145,7 @@ const MerChantScreen = () => {
             }}
             overAllscreen={{paddingBottom: 12, paddingHorizontal: 8}}
             ImageSx={{width: 46, height: 38, borderRadius: 8}}
-            source={require('../../assets/foodImg.jpg')}
+            source={require('../../assets/foodImg.png')}
             dissource={require('../../assets/location.png')}
             disImageSx={{width: 16, height: 16}}
           />
@@ -209,7 +204,7 @@ const MerChantScreen = () => {
             renderItem={({item}: any) => (
               <Card
                 overAllscreen={{paddingBottom: 12, paddingHorizontal: 8}}
-                ImageSx={{width: 56, height: 62, borderRadius: 8}}
+                ImageSx={{width: 67, height: 62, borderRadius: 8}}
                 source={item?.image}
                 quantity
                 price={item?.amount}
@@ -267,4 +262,4 @@ const MerChantScreen = () => {
   );
 };
 
-export default MerChantScreen;
+export default MerchantScreen;

@@ -57,7 +57,7 @@ export const productsListed = [
     {
       id: 1,
       category: 'Combo',
-      image: require('../assets/foodImg.jpg'),
+      image: require('../assets/foodImg.png'),
       title: 'Super Family Package',
       description: '2 Chicken Wings, 2 Rice Bowl, 1 lt Coke',
       amount: '$12.00',
@@ -65,7 +65,7 @@ export const productsListed = [
     {
       id: 2,
       category: 'Combo',
-      image: require('../assets/foodImg2.jpg'),
+      image: require('../assets/foodImg2.png'),
       title: 'Chicken Super',
       description: '1 Chicken Large, 2 Pocket Tomato Jazz',
       amount: '$18.00',
@@ -73,7 +73,7 @@ export const productsListed = [
     {
       id: 3,
       category: 'Food',
-      image: require('../assets/foodImg3.jpg'),
+      image: require('../assets/foodImg3.png'),
       title: 'Beef Steak Large',
       description: '1 Beef Steak',
       amount: '$20.00',
@@ -81,7 +81,7 @@ export const productsListed = [
     {
       id: 4,
       category: 'Drinks',
-      image: require('../assets/foodImg4.jpg'),
+      image: require('../assets/foodImg4.png'),
       title: 'Special Orange Juice',
       description: '1 Orange Juice',
       amount: '$3.00',
@@ -89,7 +89,7 @@ export const productsListed = [
     {
       id: 5,
       category: 'Food',
-      image: require('../assets/foodImg5.jpg'),
+      image: require('../assets/foodImg5.png'),
       title: 'Chicken Soup',
       description: '1 Chicken Soup',
       amount: '$49.00',
@@ -97,7 +97,7 @@ export const productsListed = [
     {
       id: 6,
       category: 'Combo',
-      image: require('../assets/foodImg6.jpg'),
+      image: require('../assets/foodImg3.png'),
       title: 'Super Bucket Biriyani',
       description: '2 Bucket Chicken Biriyani, 2 White Rice Bowl, 1 lt Coke',
       amount: '$32.00',
@@ -105,7 +105,7 @@ export const productsListed = [
     {
       id: 7,
       category: 'Combo',
-      image: require('../assets/foodImg.jpg'),
+      image: require('../assets/foodImg.png'),
       title: 'Super Family Package',
       description: '2 Chicken Wings, 2 Rice Bowl, 1 lt Coke',
       amount: '$12.00',
@@ -113,7 +113,7 @@ export const productsListed = [
     {
       id: 8,
       category: 'Combo',
-      image: require('../assets/foodImg2.jpg'),
+      image: require('../assets/foodImg2.png'),
       title: 'Chicken Super',
       description: '1 Chicken Large, 2 Pocket Tomato Jazz',
       amount: '$18.00',
@@ -121,7 +121,7 @@ export const productsListed = [
     {
       id: 9,
       category: 'Food',
-      image: require('../assets/foodImg4.jpg'),
+      image: require('../assets/foodImg4.png'),
       title: 'Beef Steak Large',
       description: '1 Beef Steak',
       amount: '$20.00',
