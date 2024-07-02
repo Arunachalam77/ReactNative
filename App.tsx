@@ -1,10 +1,12 @@
+/* eslint-disable prettier/prettier */
 import React from 'react';
-import RegisterScreen from './screens/register';
+import NavigateScreen from './utils/router';
+
 
 function App(): React.JSX.Element {
   return (
     <>
-      <RegisterScreen />
+    <NavigateScreen/>
     </>
   );
 }

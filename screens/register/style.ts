@@ -60,7 +60,7 @@ scrollViewContainer: {
     paddingBottom: 100,
 },
 
-  ctaStyle: {
+ButtonStyle: {
     backgroundColor: '#30AF89',
     fontSize: 14,
     fontWeight: '600',
