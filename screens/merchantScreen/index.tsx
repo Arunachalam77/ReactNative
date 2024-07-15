@@ -24,8 +24,10 @@ import {
   productsListed,
 } from '../../utils/contants';
 import TopStatusBar from '../../packages/atoms/TopStatusBar';
+import {useNavigation} from '@react-navigation/native';
 
 const MerchantScreen = () => {
+  const navigation:any = useNavigation();
   const [productFilter, setProductFilter] = useState(productsListed);
   const [quantity, setQuantity] = useState<any>({});
   const [overAllCount, setOverallCount] = useState(0);
@@ -122,13 +124,17 @@ const MerchantScreen = () => {
     }
   };
 
+  const onBackScreen = () => {
+    navigation.navigate('HomePage');
+  };
+
   useEffect(() => {
     getIntialData(onselect?.title);
   }, [onselect]);
 
   return (
     <View style={merchantStyles.overAllScreenSx}>
-      <TopStatusBar headTitle="Merchant Detail" />
+      <TopStatusBar headTitle="Merchant Detail" onBack={onBackScreen} />
 
       {/*first section*/}
       <View

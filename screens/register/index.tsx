@@ -14,6 +14,7 @@ import {
 import {registerStyles} from './style';
 import InputField from '../../packages/atoms/inputField';
 import MobileInput from '../../packages/atoms/mobileInput';
+import { useNavigation } from '@react-navigation/native';
 
 const countryCodes = [
   {code: '+91', image: require('../../assets/indiaFlag.png')},
@@ -22,6 +23,7 @@ const countryCodes = [
 ];
 const RegisterScreen = () => {
 
+  const navigation:any = useNavigation();
 
   const [Profile, setProfile] = useState({
     name: '',
@@ -96,11 +98,13 @@ const RegisterScreen = () => {
 
   const onRegister = () => {
     if (isIamValideToSign()) {
-      Alert.alert('Profile Register');
+      navigation.navigate('GetStarted')
       setSuccess(true);
       onClearProfile()
     } else {
       Alert.alert('Profile Not Register');
+      navigation.navigate('GetStarted')
+
     }
   };
 
@@ -148,7 +152,7 @@ const RegisterScreen = () => {
                     value={Profile.name}
                     onChange={(e: any) => handleChange('name', e)}
                     placeholder="Name"
-                    keyboardType="default"ss
+                    keyboardType="default"
                     editable={true}
                     inputMode="text"
                     error={Profile?.error?.name}
