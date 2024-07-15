@@ -125,7 +125,7 @@ const MerchantScreen = () => {
   };
 
   const onBackScreen = () => {
-    navigation.navigate('HomePage');
+    navigation.navigate('Home');
   };
 
   useEffect(() => {
